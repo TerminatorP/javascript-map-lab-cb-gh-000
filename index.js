@@ -28,3 +28,9 @@ let sortedRobots = robots.map(el => {
   }
   return Object.assign({}, {name: el.name, alliance: 'autobot'});
 });
+let coloredZebraStripes = zebraStripes.map((el, i, arr) => {
+  if (i % 2 === 0) {
+    return {width: el.width, color: 'black'};
+  }
+  return {width: el.width, color: 'white'};
+});
